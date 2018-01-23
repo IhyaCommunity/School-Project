@@ -1,0 +1,22 @@
+{
+  "name": "less-project-structure",
+  "version": "1.0.0",
+  "description": "less sub folder project struture of development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abuzar Mushtaq",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-webserver": "^0.9.1",
+    "less-plugin-autoprefix": "^1.5.1",
+  },
+  "dependencies": {
+    "gulp-typescript": "^3.2.4",
+    "gulp-less": "^3.4.0",
+    "typescript": "^2.6.2"
+  }
+}

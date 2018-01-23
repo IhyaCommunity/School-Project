@@ -1,2 +1,5 @@
-# School-Project
-Website for a non-profit school
+# Gulp Development Environment for:
+## LESS
+## TypeScript
+## WebServer
+...
