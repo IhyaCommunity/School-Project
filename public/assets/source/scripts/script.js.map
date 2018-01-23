@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["var animal = /** @class */ (function () {\n    function animal(name, color) {\n        name = this.name;\n        color = this.color;\n    }\n    return animal;\n}());\nvar Bird = new animal();\n"],"file":"script.js"}

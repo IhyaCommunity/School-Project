@@ -1,0 +1,20 @@
+* {
+  font-family: 'Segoe UI';
+}
+body {
+  background-color: #263238;
+}
+.container h1 {
+  color: #ffffff;
+}
+.container h2 {
+  color: #ddd;
+}
+.container .box {
+  height: 200px;
+  width: 200px;
+  margin-top: 3em;
+  background-color: #dce3e7;
+}
+
+/*# sourceMappingURL=main.css.map */
