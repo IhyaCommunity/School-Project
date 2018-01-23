@@ -4,4 +4,4 @@
 
 ### Run this command for installing all devDependencies. 
 
-`npm install` or `npm i` in cuurent directory.
+`npm install` or `npm i` in current directory.
