@@ -11,9 +11,9 @@ body {
   color: #ddd;
 }
 .container .box {
-  height: 200px;
-  width: 200px;
-  margin-top: 3em;
+  height: 100px;
+  width: 100px;
+  font-size: 4em;
   background-color: #dce3e7;
 }
 
