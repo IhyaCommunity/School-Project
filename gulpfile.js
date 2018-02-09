@@ -1,27 +1,19 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
-const webserver = require('gulp-webserver');
 const sourceMaps = require('gulp-sourcemaps');
 const ts = require('gulp-typescript');
+const browserSync = require('browser-sync').create();
 
 ///////////////////////////////////////////////////
 var lessDir = 'public/assets/source/less/';
 var cssDir = 'public/assets/source/styles/';
-var tsDir = 'public/assets/source/typescript/*.js';
+var tsDir = 'public/assets/source/typescript/*.ts';
 
 //////////////////////////////////////////////////
 var lessOut = 'public/assets/source/less/**/*.less';
 var tsOut = 'public/assets/source/scripts/';
 
 /////////////////////////////////////////////////////////
-gulp.task('webserver', () => {
-    gulp.src('public')
-        .pipe(webserver({
-            livereload: true,
-            directorylisten: true,
-            open: true
-        }));
-});
 
 gulp.task('less', () => {
     return gulp.src(`${lessDir}main.less`)
@@ -42,8 +34,16 @@ gulp.task('typescript', function () {
         .pipe(gulp.dest(tsOut));
 });
 
-gulp.task('watch', () => {
+gulp.task('live-reload', ['less','typescript'], () => {
+    browserSync.init({
+        server: "./public"
+    });
+    
     gulp.watch([lessOut, tsDir], ['less', 'typescript']);
+    gulp.watch('public/*.html').on('change',browserSync.reload);
 });
 
-gulp.task('default', ['less', 'typescript', 'webserver', 'watch']);
+
+
+
+gulp.task('default', ['live-reload']);
