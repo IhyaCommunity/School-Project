@@ -7,11 +7,11 @@ const browserSync = require('browser-sync').create();
 ///////////////////////////////////////////////////
 var lessDir = 'public/assets/source/less/';
 var cssDir = 'public/assets/source/styles/';
-var tsDir = 'public/assets/source/typescript/*.ts';
+var tsOut = 'public/assets/source/scripts/';
+
 
 //////////////////////////////////////////////////
-var lessOut = 'public/assets/source/less/**/*.less';
-var tsOut = 'public/assets/source/scripts/';
+var tsDir = 'public/assets/source/typescript/*.ts';
 
 /////////////////////////////////////////////////////////
 
@@ -39,11 +39,8 @@ gulp.task('live-reload', ['less','typescript'], () => {
         server: "./public"
     });
     
-    gulp.watch([lessOut, tsDir], ['less', 'typescript']);
-    gulp.watch('public/*.html').on('change',browserSync.reload);
+    gulp.watch([`${lessDir}**/*.less`, tsDir], ['less', 'typescript']);
+    gulp.watch(['public/*.html',`${lessDir}**/*.less`,tsDir]).on('change',browserSync.reload);
 });
-
-
-
 
 gulp.task('default', ['live-reload']);

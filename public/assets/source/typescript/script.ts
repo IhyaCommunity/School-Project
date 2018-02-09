@@ -9,5 +9,5 @@ class animal {
 }
 
 var Bird = new animal();
-console.log('abc');
+
 
