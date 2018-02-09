@@ -1,20 +1,5 @@
-* {
-  font-family: 'Segoe UI';
-}
 body {
-  background-color: #496370;
-}
-.container h1 {
-  color: #ffffff;
-}
-.container h2 {
-  color: #ddd;
-}
-.container .box {
-  height: 100px;
-  width: 100px;
-  font-size: 4em;
-  background-color: #dce3e7;
+  font-family: 'Raleway';
 }
 
 /*# sourceMappingURL=main.css.map */
