@@ -15,8 +15,9 @@
     "less-plugin-autoprefix": "^1.5.1"
   },
   "dependencies": {
-    "gulp-typescript": "^3.2.4",
+    "browser-sync": "^2.23.6",
     "gulp-less": "^3.4.0",
+    "gulp-typescript": "^3.2.4",
     "typescript": "^2.6.2"
   }
 }
