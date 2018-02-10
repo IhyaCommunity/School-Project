@@ -9,12 +9,27 @@ header {
             .logo {
                 display: flex;
                 align-items: center;
+                color: white;
+                .name {
+                    h1,
+                    h2 {
+                        font-size: 1.333em;
+                    }
+                }
             }
             .buttons {
                 display: flex;
                 align-items: center;
+                color: white;
                 ul {
                     display: flex;
+                    li {
+                        margin: 0 5px;
+                        a {
+                            color: white;
+                            font-size: 1.1em;
+                        }
+                    }
                 }
                 .donate {
                     margin: 0 30px 0 30px;
@@ -60,8 +75,9 @@ main {
                 color: rgb(37, 69, 142);
             }
             p {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 width: 1100px;
+                line-height: 30px;
             }
         }
     }
@@ -85,16 +101,17 @@ main {
             display: flex;
             align-items: center;
             .case {
-                margin-left: 3.5em;
+                margin-left: 2.5em;
                 width: 690px;
                 h2 {
-                    font-size: 2.2em;
+                    font-size: 2em;
                     color: #ffffff;
                 }
                 p {
-                    font-size: 1.1em;
+                    font-size: 1.09em;
                     width: 600px;
                     color: white;
+                    padding-right: 39px;
                     line-height: 25px;
                 }
                 .donate {
@@ -146,23 +163,61 @@ main {
 }
 
 .contacts-us {
-    height: 700px;
+    height: 720px;
     .contacts {
         text-align: center;
+        margin-top: 4em;
+        a {
+            color: black;
+            margin: 6px;
+            font-size: 1.2em;
+        }
     }
     .find-us {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 3em auto;
         .newsletter {
             form {
                 input {
-                    .cta-shape(gray, 50px);
+                    margin: 5px 0;
+                    width: 530px;
+                    padding: 12px 25px;
+                    .form-el(50px);
                 }
                 textarea {
-                    .cta-shape(gray, 20px);
+                    margin: 5px 0;
+                    padding: 1em;
+                    .form-el(20px);
+                }
+                button {
+                    .cta-size();
+                    .cta-shape(rgb(0, 0, 64), 50px);
+                    padding-top: 6px;
+                    margin-top: 5px;
+                    padding-bottom: 6px;
+                    color: rgb(0, 0, 64);
+                    &:hover {
+                        color: lighten(rgb(0, 0, 64), 10%);
+                    }
                 }
             }
+        }
+    }
+}
+
+footer {
+    background-color: rgb(51, 51, 51);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    small {
+        color: white;
+        font-size: 1.1em;
+        a {
+            color: rgb(85, 156, 88);
         }
     }
 }

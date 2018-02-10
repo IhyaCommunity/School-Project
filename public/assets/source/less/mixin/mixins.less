@@ -1,6 +1,6 @@
 // Buttons Mixins
 .cta-size() {
-    padding: 10px 40px;
+    padding: 10px 50px;
     font-weight: bold;
     font-size: 1.3em;
     border-radius: 50px;
@@ -8,6 +8,10 @@
 
 .cta-shape(@border-color,@r) {
     border: 2px solid @border-color;
+    border-radius: @r;
+}
+.form-el(@r) {
+    border: 1px solid gray;
     border-radius: @r;
 }
 

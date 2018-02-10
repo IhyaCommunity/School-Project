@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 .wrap {
-  max-width: 1080px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,20 +33,33 @@ header .navigation .bar {
 header .navigation .bar .logo {
   display: flex;
   align-items: center;
+  color: white;
+}
+header .navigation .bar .logo .name h1,
+header .navigation .bar .logo .name h2 {
+  font-size: 1.333em;
 }
 header .navigation .bar .buttons {
   display: flex;
   align-items: center;
+  color: white;
 }
 header .navigation .bar .buttons ul {
   display: flex;
+}
+header .navigation .bar .buttons ul li {
+  margin: 0 5px;
+}
+header .navigation .bar .buttons ul li a {
+  color: white;
+  font-size: 1.1em;
 }
 header .navigation .bar .buttons .donate {
   margin: 0 30px 0 30px;
 }
 header .navigation .bar .buttons .donate a {
   background-color: #fdd801;
-  padding: 10px 40px;
+  padding: 10px 50px;
   font-weight: bold;
   font-size: 1.3em;
   border-radius: 50px;
@@ -82,8 +95,9 @@ main section .about-us h2 {
   color: #25458e;
 }
 main section .about-us p {
-  font-size: 1.5em;
+  font-size: 1.3em;
   width: 1100px;
+  line-height: 30px;
 }
 .our-cause {
   background-color: #25458e;
@@ -106,24 +120,25 @@ main section .about-us p {
   align-items: center;
 }
 .our-cause .cause .case-container .case {
-  margin-left: 3.5em;
+  margin-left: 2.5em;
   width: 690px;
 }
 .our-cause .cause .case-container .case h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   color: #ffffff;
 }
 .our-cause .cause .case-container .case p {
-  font-size: 1.1em;
+  font-size: 1.09em;
   width: 600px;
   color: white;
+  padding-right: 39px;
   line-height: 25px;
 }
 .our-cause .cause .case-container .case .donate {
   padding-top: 1.56em;
 }
 .our-cause .cause .case-container .case .donate a {
-  padding: 10px 40px;
+  padding: 10px 50px;
   font-weight: bold;
   font-size: 1.3em;
   border: 2px solid #ffdd00;
@@ -163,23 +178,63 @@ main section .about-us p {
   justify-content: center;
 }
 .contacts-us {
-  height: 700px;
+  height: 720px;
 }
 .contacts-us .contacts {
   text-align: center;
+  margin-top: 4em;
+}
+.contacts-us .contacts a {
+  color: black;
+  margin: 6px;
+  font-size: 1.2em;
 }
 .contacts-us .find-us {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 3em auto;
 }
 .contacts-us .find-us .newsletter form input {
-  border: 2px solid gray;
+  margin: 5px 0;
+  width: 530px;
+  padding: 12px 25px;
+  border: 1px solid gray;
   border-radius: 50px;
 }
 .contacts-us .find-us .newsletter form textarea {
-  border: 2px solid gray;
+  margin: 5px 0;
+  padding: 1em;
+  border: 1px solid gray;
   border-radius: 20px;
+}
+.contacts-us .find-us .newsletter form button {
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: 2px solid #000040;
+  border-radius: 50px;
+  padding-top: 6px;
+  margin-top: 5px;
+  padding-bottom: 6px;
+  color: #000040;
+}
+.contacts-us .find-us .newsletter form button:hover {
+  color: #000073;
+}
+footer {
+  background-color: #333333;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer small {
+  color: white;
+  font-size: 1.1em;
+}
+footer small a {
+  color: #559c58;
 }
 
 /*# sourceMappingURL=main.css.map */
