@@ -1,0 +1,32 @@
+header {
+    .navigation {
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+            .buttons {
+                display: flex;
+                align-items: center;
+                ul {
+                    display: flex;
+                }
+                .donate {
+                    margin-left: 30px;
+                    a {
+                        background-color: @primary-btn;
+                        .cta-color(rgb(253, 216, 1));
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body {
+    background-color: rgb(180, 178, 178);
+}
