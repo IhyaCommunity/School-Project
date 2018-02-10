@@ -7,16 +7,23 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: white;
 }
 .wrap {
-  max-width: 1380px;
+  max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+}
+.line {
+  width: 300px;
+  margin: 20px auto;
 }
 .wrapper {
   margin-left: auto;
   margin-right: auto;
+}
+header {
+  height: 800px;
+  background-color: gray;
 }
 header .navigation .bar {
   display: flex;
@@ -35,17 +42,144 @@ header .navigation .bar .buttons ul {
   display: flex;
 }
 header .navigation .bar .buttons .donate {
-  margin-left: 30px;
+  margin: 0 30px 0 30px;
 }
 header .navigation .bar .buttons .donate a {
-  padding: 12px 40px;
-  font-weight: bold;
-  border-radius: 50px;
   background-color: #fdd801;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 1.3em;
+  border-radius: 50px;
   color: black;
 }
-body {
-  background-color: #b4b2b2;
+header .navigation .bar .buttons .donate a:hover {
+  background-color: #caad01;
+}
+header .hero .goal {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 500px;
+}
+header .hero .goal p {
+  font-size: 3em;
+  color: #fff;
+  margin: 0 auto;
+}
+main {
+  background-color: #dadada;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section .about-us {
+  text-align: center;
+}
+main section .about-us h2 {
+  font-size: 2.3em;
+  font-weight: 900;
+  color: #25458e;
+}
+main section .about-us p {
+  font-size: 1.5em;
+  width: 1100px;
+}
+.our-cause {
+  background-color: #25458e;
+}
+.our-cause .cause {
+  display: flex;
+  height: 500px;
+  width: 1280px;
+  margin: 0 auto;
+}
+.our-cause .cause .video {
+  width: 690px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-cause .cause .case-container {
+  background-color: #25458e;
+  display: flex;
+  align-items: center;
+}
+.our-cause .cause .case-container .case {
+  margin-left: 3.5em;
+  width: 690px;
+}
+.our-cause .cause .case-container .case h2 {
+  font-size: 2.2em;
+  color: #ffffff;
+}
+.our-cause .cause .case-container .case p {
+  font-size: 1.1em;
+  width: 600px;
+  color: white;
+  line-height: 25px;
+}
+.our-cause .cause .case-container .case .donate {
+  padding-top: 1.56em;
+}
+.our-cause .cause .case-container .case .donate a {
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: 2px solid #ffdd00;
+  border-radius: 50px;
+  color: #ffdd00;
+}
+.our-cause .cause .case-container .case .donate a:hover {
+  color: #ccb100;
+  border: 2px solid #ccb100;
+  border-radius: 50px;
+}
+.quotes-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotes-container .quotation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotes-container .quotation .qoute p {
+  font-family: sans-serif;
+  font-size: 2em;
+}
+.quotes-container .quotation .qoute span {
+  padding-top: 60px;
+  font-size: 2.1em;
+  font-family: sans-serif;
+}
+.gallery {
+  background-color: #ddd;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-us {
+  height: 700px;
+}
+.contacts-us .contacts {
+  text-align: center;
+}
+.contacts-us .find-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-us .find-us .newsletter form input {
+  border: 2px solid gray;
+  border-radius: 50px;
+}
+.contacts-us .find-us .newsletter form textarea {
+  border: 2px solid gray;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
