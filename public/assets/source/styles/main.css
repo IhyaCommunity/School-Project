@@ -114,6 +114,10 @@ main section .about-us p {
   align-items: center;
   justify-content: center;
 }
+.our-cause .cause .video iframe {
+  height: 500px;
+  width: 650px;
+}
 .our-cause .cause .case-container {
   background-color: #25458e;
   display: flex;
@@ -235,6 +239,11 @@ footer small {
 }
 footer small a {
   color: #559c58;
+}
+@media (max-width: 1250px) {
+  .cause {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
