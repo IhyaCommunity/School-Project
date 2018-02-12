@@ -103,8 +103,6 @@ main section .about-us {
   text-align: center;
 }
 main section .about-us h2 {
-  font-size: 2.3em;
-  font-weight: 900;
   color: #25458e;
 }
 main section .about-us p {
@@ -136,7 +134,6 @@ main section .about-us p {
   margin-left: 2.5em;
 }
 .our-cause .cause .case-container .case h2 {
-  font-size: 2em;
   color: #ffffff;
 }
 .our-cause .cause .case-container .case p {
@@ -252,23 +249,43 @@ footer small a {
   color: #559c58;
 }
 @media (max-width: 1266px) {
-  .buttons {
-    display: none;
+  main h2 {
+    font-size: 3.5em;
   }
   .cause {
-    height: 1070px;
+    padding: 50px 0;
   }
-  main p {
+  .cause .case-container {
+    margin-top: 50px;
+  }
+  .cause h2 {
+    font-size: 3.3em;
+    text-align: center;
+  }
+  #main_para {
     font-size: 3em;
+    line-height: 50px;
+    text-align: left;
+    margin: 50px 60px;
+  }
+  #cause_para {
+    font-size: 3em;
+    line-height: 60px;
+    text-align: left;
+    margin: 50px 0;
+    width: 800px;
+  }
+  #video {
+    height: 600px;
+    width: 900px;
+  }
+  #qoute {
+    font-size: 2.3em;
   }
 }
 @media (max-width: 1170px) {
   .find-us {
     height: 1000px;
-  }
-  #gmap_canvas {
-    height: 600px;
-    width: 800px;
   }
 }
 
