@@ -18,11 +18,11 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" onscroll="navShow()" id="main">
 
         <!-- 1 -->
         <header>
-            <div class="navigation">
+            <div class="navigation" id="top-nav">
 
                 <div class="bar wrap">
 
@@ -176,24 +176,17 @@
 
 
                     <!-- ______________ Google Maps___________________ -->
-                    <div class="google-maps">
-                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                        <div style='overflow:hidden;height:360px;width:600px;'>
-                            <div id='gmap_canvas' style='height:360px;width:600px;'></div>
-                            <div>
-                                <small>
-                                    <a href=""></a>
-                                </small>
-                            </div>
-                            <style>
-                                #gmap_canvas img {
-                                    max-width: none!important;
-                                    background: none!important
-                                }
-                            </style>
-                        </div>
-                        <script type='text/javascript'>function init_map() { var myOptions = { zoom: 13, center: new google.maps.LatLng(31.5203696, 74.3587473), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(31.5203696, 74.3587473) }); infowindow = new google.maps.InfoWindow({ content: '<strong>Lahore</strong><br>Lahore<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:440px;width:700px;'>
+                        <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none!important;
+                                background: none!important
+                            }
+                        </style>
                     </div>
+                    <script type='text/javascript'>function init_map() { var myOptions = { zoom: 18, center: new google.maps.LatLng(31.4388525, 74.28535529999999), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(31.4388525, 74.28535529999999) }); infowindow = new google.maps.InfoWindow({ content: '<strong>SkyImpel </strong><br>6 Sutlej Ave, Lahore, Pakistan<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 
 
                 </div>
@@ -206,16 +199,16 @@
                     </div>
 
                     <form action="/node.js">
-                        <input type="text" placeholder="Full Name">
+                        <input required type="text" placeholder="Full Name">
 
                         <br>
-                        <input type="text" placeholder="Phone Number">
+                        <input required type="text" placeholder="Phone Number">
                         <br>
 
-                        <input type="text" placeholder="Email">
+                        <input required type="text" placeholder="Email">
                         <br>
 
-                        <textarea placeholder="Messege" cols="60" rows="5"></textarea>
+                        <textarea required placeholder="Messege" cols="60" rows="5"></textarea>
 
                         <br>
                         <button type="submit">SEND</button>

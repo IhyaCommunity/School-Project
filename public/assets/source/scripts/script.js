@@ -1,10 +1,7 @@
-var animal = /** @class */ (function () {
-    function animal(name, color) {
-        name = this.name;
-        color = this.color;
-    }
-    return animal;
-}());
-var Bird = new animal();
+var nav = document.getElementById('top-nav');
+var el = document.getElementById('main');
+window.onscroll = function navShow() {
+    nav.classList.add('show-color');
+};
 
 //# sourceMappingURL=script.js.map

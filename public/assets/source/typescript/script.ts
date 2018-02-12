@@ -1,13 +1,9 @@
-class animal {
-    name: string;
-    color: string;
+let nav = document.getElementById('top-nav');
+let el = document.getElementById('main');
 
-    constructor(name?: string, color?: string) {
-        name = this.name;
-        color = this.color;
-    }
+
+
+window.onscroll = function navShow() {
+
+    nav.classList.add('show-color');
 }
-
-var Bird = new animal();
-
-

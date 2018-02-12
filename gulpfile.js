@@ -2,8 +2,6 @@ const gulp = require('gulp');
 const less = require('gulp-less');
 const sourceMaps = require('gulp-sourcemaps');
 const ts = require('gulp-typescript');
-const browserSync = require('browser-sync').create();
-
 ///////////////////////////////////////////////////
 var lessDir = 'public/assets/source/less/';
 var cssDir = 'public/assets/source/styles/';
@@ -34,13 +32,11 @@ gulp.task('typescript', function () {
         .pipe(gulp.dest(tsOut));
 });
 
-gulp.task('live-reload', ['less','typescript'], () => {
-    browserSync.init({
-        server: "./public"
-    });
-    
+gulp.task('watch', () => {
     gulp.watch([`${lessDir}**/*.less`, tsDir], ['less', 'typescript']);
-    gulp.watch(['public/*.html',`${lessDir}**/*.less`,tsDir]).on('change',browserSync.reload);
 });
 
-gulp.task('default', ['live-reload']);
+
+
+
+gulp.task('default', ['less','typescript','watch']);

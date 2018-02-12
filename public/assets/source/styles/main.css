@@ -21,9 +21,22 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.show-color {
+  background-color: #25458e;
+  transition: .5s;
+}
 header {
   height: 800px;
-  background-color: gray;
+  background-image: url('../../image/cover.png');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header .navigation {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 header .navigation .bar {
   display: flex;
@@ -48,7 +61,7 @@ header .navigation .bar .buttons ul {
   display: flex;
 }
 header .navigation .bar .buttons ul li {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 header .navigation .bar .buttons ul li a {
   color: white;
@@ -72,7 +85,7 @@ header .hero .goal {
   display: flex;
   text-align: center;
   align-items: center;
-  height: 500px;
+  height: 800px;
 }
 header .hero .goal p {
   font-size: 3em;
@@ -81,7 +94,7 @@ header .hero .goal p {
 }
 main {
   background-color: #dadada;
-  height: 400px;
+  padding: 2em 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,20 +109,16 @@ main section .about-us h2 {
 }
 main section .about-us p {
   font-size: 1.3em;
-  width: 1100px;
+  margin: 20px 170px;
   line-height: 30px;
 }
-.our-cause {
-  background-color: #25458e;
-}
 .our-cause .cause {
+  background-color: #25458e;
   display: flex;
-  height: 500px;
-  width: 1280px;
-  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .our-cause .cause .video {
-  width: 690px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,7 +134,6 @@ main section .about-us p {
 }
 .our-cause .cause .case-container .case {
   margin-left: 2.5em;
-  width: 690px;
 }
 .our-cause .cause .case-container .case h2 {
   font-size: 2em;
@@ -133,9 +141,8 @@ main section .about-us p {
 }
 .our-cause .cause .case-container .case p {
   font-size: 1.09em;
-  width: 600px;
+  width: 570px;
   color: white;
-  padding-right: 39px;
   line-height: 25px;
 }
 .our-cause .cause .case-container .case .donate {
@@ -181,9 +188,6 @@ main section .about-us p {
   align-items: center;
   justify-content: center;
 }
-.contacts-us {
-  height: 720px;
-}
 .contacts-us .contacts {
   text-align: center;
   margin-top: 4em;
@@ -195,9 +199,16 @@ main section .about-us p {
 }
 .contacts-us .find-us {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 3em auto;
+  justify-content: center;
+  margin: 3em 0 2em 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.contacts-us .find-us .location {
+  margin: 0;
+}
+.contacts-us .find-us .newsletter {
+  margin-left: 30px;
 }
 .contacts-us .find-us .newsletter form input {
   margin: 5px 0;
@@ -240,9 +251,24 @@ footer small {
 footer small a {
   color: #559c58;
 }
-@media (max-width: 1250px) {
+@media (max-width: 1266px) {
+  .buttons {
+    display: none;
+  }
   .cause {
-    width: 400px;
+    height: 1070px;
+  }
+  main p {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1170px) {
+  .find-us {
+    height: 1000px;
+  }
+  #gmap_canvas {
+    height: 600px;
+    width: 800px;
   }
 }
 
