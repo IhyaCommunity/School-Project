@@ -1,8 +1,8 @@
-// Buttons Mixins
+// buttons Mixins
 .cta-size() {
     padding: 10px 50px;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5rem;
     border-radius: 50px;
 }
 
@@ -17,4 +17,12 @@
     border-radius: @r;
 }
 
-@primary-btn: rgb(253, 216, 1);
+// gallery grid system
+.gallery-grid() {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+@primary-color: rgb(253, 216, 1);
+@secondary-color: rgb(37, 69, 142);

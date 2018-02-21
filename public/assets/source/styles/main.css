@@ -9,13 +9,13 @@ a {
   text-decoration: none;
 }
 .wrap {
-  max-width: 1100px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
 .line {
-  width: 300px;
-  margin: 20px auto;
+  width: 18rem;
+  margin: 25px auto;
 }
 .wrapper {
   margin-left: auto;
@@ -50,7 +50,7 @@ header .navigation .bar .logo {
 }
 header .navigation .bar .logo .name h1,
 header .navigation .bar .logo .name h2 {
-  font-size: 1.333em;
+  font-size: 1.7rem;
 }
 header .navigation .bar .buttons {
   display: flex;
@@ -65,7 +65,7 @@ header .navigation .bar .buttons ul li {
 }
 header .navigation .bar .buttons ul li a {
   color: white;
-  font-size: 1.1em;
+  font-size: 1.28rem;
 }
 header .navigation .bar .buttons .donate {
   margin: 0 30px 0 30px;
@@ -74,12 +74,14 @@ header .navigation .bar .buttons .donate a {
   background-color: #fdd801;
   padding: 10px 50px;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.5rem;
   border-radius: 50px;
   color: black;
 }
 header .navigation .bar .buttons .donate a:hover {
   background-color: #caad01;
+  color: white;
+  transition: .2s;
 }
 header .hero .goal {
   display: flex;
@@ -88,32 +90,37 @@ header .hero .goal {
   height: 800px;
 }
 header .hero .goal p {
-  font-size: 3em;
+  font-size: 3.4rem;
   color: #fff;
   margin: 0 auto;
 }
 main {
-  background-color: #dadada;
-  padding: 2em 0;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main section .about-us {
+  width: 100%;
   text-align: center;
 }
-main section .about-us h2 {
+main section .about-us span {
+  font-size: 2.6rem;
   color: #25458e;
 }
 main section .about-us p {
-  font-size: 1.3em;
-  margin: 20px 170px;
-  line-height: 30px;
+  font-size: 1.2rem;
+  margin: 2rem 3.6rem;
+  line-height: 2rem;
 }
-.our-cause .cause {
+.our-cause {
   background-color: #25458e;
   display: flex;
   justify-content: center;
+}
+.our-cause .cause {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .our-cause .cause .video {
@@ -122,41 +129,42 @@ main section .about-us p {
   justify-content: center;
 }
 .our-cause .cause .video iframe {
-  height: 500px;
-  width: 650px;
+  height: 36rem;
+  width: 53rem;
 }
 .our-cause .cause .case-container {
-  background-color: #25458e;
   display: flex;
   align-items: center;
 }
 .our-cause .cause .case-container .case {
-  margin-left: 2.5em;
+  margin-left: 2.5rem;
 }
 .our-cause .cause .case-container .case h2 {
-  color: #ffffff;
+  font-size: 2rem;
+  color: white;
 }
 .our-cause .cause .case-container .case p {
-  font-size: 1.09em;
-  width: 570px;
+  font-size: 1.2rem;
+  width: 580px;
   color: white;
   line-height: 25px;
 }
 .our-cause .cause .case-container .case .donate {
-  padding-top: 1.56em;
+  padding-top: 1.56rem;
 }
 .our-cause .cause .case-container .case .donate a {
   padding: 10px 50px;
   font-weight: bold;
-  font-size: 1.3em;
-  border: 2px solid #ffdd00;
+  font-size: 1.5rem;
+  border: 2px solid #25458e;
   border-radius: 50px;
-  color: #ffdd00;
+  color: #25458e;
 }
 .our-cause .cause .case-container .case .donate a:hover {
-  color: #ccb100;
-  border: 2px solid #ccb100;
+  color: #1a3166;
+  border: 2px solid #1a3166;
   border-radius: 50px;
+  transition: .2s;
 }
 .quotes-container {
   height: 300px;
@@ -179,11 +187,19 @@ main section .about-us p {
   font-family: sans-serif;
 }
 .gallery {
-  background-color: #ddd;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+}
+.gallery .col-left {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.gallery .col-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 .contacts-us .contacts {
   text-align: center;
@@ -223,7 +239,7 @@ main section .about-us p {
 .contacts-us .find-us .newsletter form button {
   padding: 10px 50px;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.5rem;
   border: 2px solid #000040;
   border-radius: 50px;
   padding-top: 6px;
@@ -232,7 +248,9 @@ main section .about-us p {
   color: #000040;
 }
 .contacts-us .find-us .newsletter form button:hover {
-  color: #000073;
+  background-color: #000040;
+  color: #fff;
+  transition: .2s;
 }
 footer {
   background-color: #333333;
@@ -248,65 +266,49 @@ footer small {
 footer small a {
   color: #559c58;
 }
+@media (max-width: 1600px) {
+  #video {
+    width: 45rem;
+  }
+}
+@media (max-width: 1355px) {
+  #video {
+    width: 40rem;
+  }
+}
 @media (max-width: 1266px) {
+  #name h1,
+  #name h2 {
+    font-size: 2.5rem;
+  }
   nav {
     display: none;
   }
-  .bar {
-    font-size: 2em;
-  }
-  #hero_text {
-    font-size: 3.5em;
-  }
-  main h2 {
-    font-size: 3.5em;
-  }
-  .cause {
-    padding: 50px 0;
-  }
-  .cause .case-container {
-    margin-top: 50px;
-  }
-  .cause h2 {
-    font-size: 3.3em;
-    text-align: center;
+  #about_us_h {
+    font-size: 4rem;
   }
   #main_para {
-    font-size: 3em;
-    line-height: 50px;
-    text-align: left;
-    margin: 50px 60px;
+    font-size: 3rem;
+    line-height: 3rem;
   }
-  #cause_para {
-    font-size: 3em;
-    line-height: 60px;
-    text-align: left;
-    margin: 50px 0;
-    width: 800px;
+  #cause_container {
+    justify-content: center;
   }
   #video {
-    height: 600px;
-    width: 900px;
+    width: 61rem;
+    height: 46rem;
   }
-  #qoute {
-    font-size: 2.3em;
+  #cause_heading {
+    font-size: 3.6rem;
   }
-  .contacts {
-    font-size: 2.4em;
+  #cause_para {
+    font-size: 3rem;
+    width: 100%;
+    line-height: 3.3rem;
   }
-  .location {
-    font-size: 2em;
-  }
-  .newsletter {
-    font-size: 1.4em;
-  }
-  footer {
-    font-size: 1.6em;
-  }
-}
-@media (max-width: 1170px) {
-  .find-us {
-    height: 1290px;
+  #case_container {
+    padding: 4rem 1.5rem;
+    margin: 0;
   }
 }
 
