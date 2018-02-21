@@ -23,6 +23,12 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,1fr);
 }
-
+.grid-control(@c-s,@c-e,@r-s,@r-e) {
+    grid-column-start: @c-s;
+    grid-column-end: @c-e;
+    grid-row-start: @r-s;
+    grid-row-end: @r-e;
+}
+///////////////////////////////////////////////
 @primary-color: rgb(253, 216, 1);
 @secondary-color: rgb(37, 69, 142);

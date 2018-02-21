@@ -186,10 +186,14 @@ main section .about-us p {
   font-size: 2.1em;
   font-family: sans-serif;
 }
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100px;
 }
 .gallery .col-left {
   display: grid;
@@ -200,6 +204,38 @@ main section .about-us p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+}
+.col-left-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #25458e;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.col-left-1 span {
+  font-size: 3.3rem;
+}
+.col-left-6 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.col-right-4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.col-right-5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background: #eee;
 }
 .contacts-us .contacts {
   text-align: center;
