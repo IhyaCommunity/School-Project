@@ -18,13 +18,14 @@ header {
                 align-items: center;
                 color: white;
                 padding: .4em 0;
+                user-select: none;
                 .name {
                     width: 100%;
-                    h1 {
-                        font-size: 2vw;
+                    .first-line {
+                        font-size: 3.5vh;
                     }
-                    h2 {
-                        font-size: 1.29vw;
+                    .second-line {
+                        font-size: 2.3vh;
                     }
                 }
                 &:hover {
@@ -89,13 +90,12 @@ main {
             width: 100%;
             text-align: center;
             span {
-                font-size: 2.3rem;
+                font-size: 4vh;
                 color: @secondary-color;
             }
             p {
-                font-size: 1.2rem;
-                margin: 2rem 3.6rem;
-                line-height: 2rem;
+                font-size: 3vh;
+                margin: 2rem 3.6rem; // line-height: 2vw;
             }
         }
     }
@@ -131,7 +131,7 @@ main {
                     font-size: 1.47vw;
                     width: 41vw;
                     color: white;
-                    line-height: 25px;
+
                 }
                 .donate {
                     padding-top: 1.56rem;
@@ -196,10 +196,17 @@ main {
     max-width: 50%;
 }
 
+.bind-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 //-------------- col-left ----------------------//
 .col-left {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     .col-left-1 {
         flex-basis: 100%;
         justify-content: center;
@@ -229,9 +236,15 @@ main {
 .col-right {
     display: flex;
     flex-wrap: wrap;
-    .col-right-1
-    .col-right-2,
-    .col-right-3, {
+    .col-right-1 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+    .col-right-2 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+    .col-right-3 {
         flex: 33.33%;
         max-width: 33.33%;
     }
@@ -242,20 +255,29 @@ main {
     .col-right-5 {
         flex: 33.33%;
     }
-    .col-right-6,.col-right-7 {
+    .col-right-6,
+    .col-right-7 {
         flex: 33.33%;
         max-width: 33.33%;
     }
 }
+
 /////////////////////////////////////////////////////////////////////////
 .contacts-us {
     .contacts {
         text-align: center;
         margin-top: 4em;
+        h1 {
+            font-size: 4.4vh;
+            color: @secondary-color;
+        }
+        span {
+            font-size: 3vh;
+        }
         a {
             color: black;
             margin: 6px;
-            font-size: 1.2em;
+            font-size: 3vh;
         }
     }
     .find-us {
@@ -266,9 +288,27 @@ main {
         align-content: space-between;
         .location {
             margin: 0;
+            .location-info {
+                h2 {
+                    font-size: 4vh;
+                    color: @secondary-color;
+                }
+                p {
+                    font-size: 3vh;
+                }
+            }
         }
         .newsletter {
             margin-left: 30px;
+            .newsletter-info {
+                h1 {
+                    font-size: 4vh;
+                    color: @secondary-color;
+                }
+                p {
+                    font-size: 3vh;
+                }
+            }
             form {
                 input {
                     margin: 5px 0;
@@ -285,12 +325,12 @@ main {
                 }
                 button {
                     .cta-size();
-                    .cta-shape(rgb(0, 0, 64),
+                    .cta-shape(@secondary-color),
                     50px);
                     padding-top: 6px;
                     margin-top: 5px;
                     padding-bottom: 6px;
-                    color: rgb(0, 0, 64);
+                    color: @primary-color;
                     &:hover {
                         background-color: rgb(0, 0, 64);
                         color: #fff;

@@ -2,7 +2,7 @@
 .cta-size() {
     padding: 10px 50px;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 2.1vh;
     border-radius: 50px;
 }
 
@@ -17,18 +17,7 @@
     border-radius: @r;
 }
 
-// gallery grid system
-.gallery-grid() {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.grid-control(@c-s,@c-e,@r-s,@r-e) {
-    grid-column-start: @c-s;
-    grid-column-end: @c-e;
-    grid-row-start: @r-s;
-    grid-row-end: @r-e;
-}
+
 ///////////////////////////////////////////////
 @primary-color: rgb(253, 216, 1);
 @secondary-color: rgb(37, 69, 142);
