@@ -15,6 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="icon" type="png" href="assets/image/logo/logo.png" />
+    <script src="assets/source/scripts/smoothscroll.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,8 @@
 
                 <div class="bar wrap">
 
-                    <div class="logo">
-                        <img height="160px" width="160px" src="assets/image/logo/main-logo.svg" alt="N M P H S - logo">
+                    <div class="logo" id="logo">
+                        <img height="110px" width="160px" src="assets/image/logo/logo.png" alt="N M P H S - logo">
                         <div class="name" id="name">
                             <h1>New Muslim</h1>
                             <h2>Public High School</h2>
@@ -38,21 +39,21 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">About us</a>
+                                    <a id="about">About us</a>
                                 </li>–
                                 <li>
-                                    <a href="#">Our Cause</a>
+                                    <a id="cause">Our Cause</a>
                                 </li>–
                                 <li>
-                                    <a href="#">Gallery</a>
+                                    <a id="gallery">Gallery</a>
                                 </li>–
                                 <li>
-                                    <a href="#">Contact us</a>
+                                    <a id="contact">Contact us</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="donate">
-                            <a href="#">DONATE</a>
+                            <a href="donate.html">DONATE</a>
                         </div>
                         <!-- <div class="ham">
                             <a href="#"></a>
@@ -116,7 +117,7 @@
                             expand our program through Allah's help and your heartfelt donations to make sure that no child
                             is deprived from the blessing of knowledge due to financial and social constraints.</p>
                         <div class="donate">
-                            <a href="#">DONATE</a>
+                            <a href="donate.html">DONATE</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +140,7 @@
         </div>
 
         <!--5 -->
-        <div class="gallery-container">
+        <!-- <div class="gallery-container">
             <div class="gallery">
 
                 <div class="col-left">
@@ -147,25 +148,24 @@
                     <div class="col-left-1">
                         <span>School in Photos</span>
                     </div>
-
                     <div class="col-left-2">
-                        <img height="265px" width="300px" src="assets/image/reading-book.png">
+                        <img src="assets/image/reading-book.png">
                     </div>
 
                     <div class="col-left-3">
-                        <img height="265px" width="300px" src="assets/image/urdu-book.png">
+                        <img src="assets/image/urdu-book.png">
                     </div>
 
                     <div class="col-left-4">
-                        <img height="265px" width="300px" src="assets/image/kid-drawing.png">
+                        <img src="assets/image/kid-drawing.png">
                     </div>
 
                     <div class="col-left-5">
-                        <img height="265px" width="300px" src="assets/image/class-door.png">
+                        <img src="assets/image/class-door.png">
                     </div>
 
                     <div class="col-left-6">
-                        <img height="265px" width="620px" src="assets/image/reading.png">
+                        <img src="assets/image/reading.png">
                     </div>
 
                 </div>
@@ -173,35 +173,35 @@
                 <div class="col-right">
 
                     <div class="col-right-1">
-                        <img height="265px" width="300px" src="assets/image/school-classes.png">
+                        <img src="assets/image/school-classes.png">
                     </div>
 
                     <div class="col-right-2">
-                        <img height="265px" width="300px" src="assets/image/school-front.png">
+                        <img src="assets/image/school-front.png">
                     </div>
 
                     <div class="col-right-3">
-                        <img height="265px" width="300px" src="assets/image/board.png">
+                        <img src="assets/image/board.png">
                     </div>
 
                     <div class="col-right-4">
-                        <img height="265px" width="620px" src="assets/image/school-kids.png">
+                        <img src="assets/image/school-kids.png">
                     </div>
 
                     <div class="col-right-5">
-                        <img height="520px" width="300px" src="assets/image/girl.png">
+                        <img src="assets/image/girl.png">
                     </div>
                     <div class="col-right-6">
-                        <img height="265px" width="300px" src="assets/image/school-girls.png">
+                        <img src="assets/image/school-girls.png">
                     </div>
                     <div class="col-right-7">
-                        <img height="265px" width="300px" src="assets/image/boy-reading.png">
+                        <img src="assets/image/boy-reading.png">
                     </div>
 
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
         <!-- 6 -->
         <div class="contacts-us">
@@ -237,8 +237,8 @@
 
                     <!-- ______________ Google Maps___________________ -->
                     <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                    <div style='overflow:hidden;height:440px;width:700px;'>
-                        <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+                    <div style='overflow:hidden;height:440px;width:600px;'>
+                        <div id='gmap_canvas' style='height:440px;width:600px;'></div>
                         <style>
                             #gmap_canvas img {
                                 max-width: none!important;
@@ -268,7 +268,7 @@
                         <input required type="text" placeholder="Email">
                         <br>
 
-                        <textarea required placeholder="Messege" cols="60" rows="5"></textarea>
+                        <textarea required placeholder="Messege"></textarea>
 
                         <br>
                         <button type="submit">SEND</button>

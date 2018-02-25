@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["script.js"],"sourcesContent":["var nav = document.getElementById('top-nav');\nvar el = document.getElementById('main');\nwindow.onscroll = function navShow() {\n    nav.classList.add('show-color');\n};\n"],"file":"script.js"}

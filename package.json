@@ -10,14 +10,13 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-webserver": "^0.9.1",
     "less-plugin-autoprefix": "^1.5.1"
   },
   "dependencies": {
     "browser-sync": "^2.23.6",
-    "gulp-less": "^3.4.0",
-    "gulp-typescript": "^3.2.4",
-    "typescript": "^2.6.2"
+    "gulp-less": "^3.4.0"
   }
 }

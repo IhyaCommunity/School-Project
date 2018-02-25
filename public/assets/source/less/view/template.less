@@ -17,11 +17,18 @@ header {
                 display: flex;
                 align-items: center;
                 color: white;
+                padding: .4em 0;
                 .name {
-                    h1,
-                    h2 {
-                        font-size: 1.7rem;
+                    width: 100%;
+                    h1 {
+                        font-size: 2vw;
                     }
+                    h2 {
+                        font-size: 1.29vw;
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
                 }
             }
             .buttons {
@@ -30,11 +37,16 @@ header {
                 color: white;
                 ul {
                     display: flex;
+                    align-items: center;
                     li {
                         margin: 0 10px;
                         a {
                             color: white;
                             font-size: 1.28rem;
+                            &:hover {
+                                color: @primary-color;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
@@ -45,9 +57,7 @@ header {
                         .cta-size();
                         color: black;
                         &:hover {
-                            background-color: darken(@primary-color, 10%);
-                            color: white;
-                            transition: .2s;
+                            background-color: darken(@primary-color, 20%);
                         }
                     }
                 }
@@ -79,7 +89,7 @@ main {
             width: 100%;
             text-align: center;
             span {
-                font-size: 2.6rem;
+                font-size: 2.3rem;
                 color: @secondary-color;
             }
             p {
@@ -94,7 +104,7 @@ main {
 .our-cause {
     background-color: @secondary-color;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     .cause {
         display: flex;
         justify-content: space-between;
@@ -104,8 +114,8 @@ main {
             align-items: center;
             justify-content: center;
             iframe {
-                height: 36rem;
-                width: 53rem;
+                height: 33rem;
+                width: 50vw;
             }
         }
         .case-container {
@@ -114,12 +124,12 @@ main {
             .case {
                 margin-left: 2.5rem;
                 h2 {
-                    font-size: 2rem;
+                    font-size: 2.38vw;
                     color: white;
                 }
                 p {
-                    font-size: 1.2rem;
-                    width: 580px;
+                    font-size: 1.47vw;
+                    width: 41vw;
                     color: white;
                     line-height: 25px;
                 }
@@ -127,14 +137,13 @@ main {
                     padding-top: 1.56rem;
                     a {
                         .cta-size();
-                        .cta-shape(@secondary-color,
+                        .cta-shape(@primary-color,
                         50px);
-                        color: @secondary-color;
+                        color: @primary-color;
                         &:hover {
-                            color: darken(@secondary-color, 10%);
-                            .cta-shape(darken(@secondary-color, 10%),
-                            50px);
                             transition: .2s;
+                            background-color: @primary-color;
+                            color: @secondary-color;
                         }
                     }
                 }
@@ -165,48 +174,79 @@ main {
         }
     }
 }
+
 ///////////////////////// PHOTOS //////////////////////////////////////////
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
 .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .col-left {
-        .gallery-grid();
+    display: flex;
+    flex-wrap: wrap;
+    img {
+        width: 100%;
+        vertical-align: middle;
     }
-    .col-right {
-        .gallery-grid();
+    img:hover {
+        transform: scale3d(1.2, 1.2, 1);
+        transition: .3s;
+        box-shadow: 1px 1px 41px 8px rgba(0, 0, 0, 1);
     }
 }
+
+.col-left,
+.col-right {
+    flex: 50%;
+    max-width: 50%;
+}
+
 //-------------- col-left ----------------------//
-.col-left-1 {
-    .grid-control(1,4,1,2);
-    background-color: @secondary-color;
-    color: white;
-    align-items: center;
-    text-align: center;
-    span {
-        font-size: 3.3rem;
+.col-left {
+    display: flex;
+    flex-wrap: wrap;
+    .col-left-1 {
+        flex-basis: 100%;
+        justify-content: center;
+        background-color: @secondary-color;
+        color: white;
+        display: flex;
+        height: 13.33rem;
+        align-items: center;
+        span {
+            font-size: 2rem;
+        }
     }
-}
-.col-left-6 {
-    .grid-control(2,4,3,4)
+    .col-left-2,
+    .col-left-3,
+    .col-left-4,
+    .col-left-5 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+    .col-left-6 {
+        flex: 66.666%;
+        max-width: 66.66%;
+    }
 }
 
 //--------------- col-right ------------------------//
-
-.col-right-4 {
-    .grid-control(1,3,2,3);
-
+.col-right {
+    display: flex;
+    flex-wrap: wrap;
+    .col-right-1
+    .col-right-2,
+    .col-right-3, {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+    .col-right-4 {
+        flex: 66.66%;
+        max-width: 66.66%;
+    }
+    .col-right-5 {
+        flex: 33.33%;
+    }
+    .col-right-6,.col-right-7 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
 }
-.col-right-5 {
-    .grid-control(3,4,2,4);
-    background: #eee;
-}
-
 /////////////////////////////////////////////////////////////////////////
 .contacts-us {
     .contacts {
@@ -232,13 +272,15 @@ main {
             form {
                 input {
                     margin: 5px 0;
-                    width: 530px;
+                    width: 34rem;
                     padding: 12px 25px;
                     .form-el(50px);
                 }
                 textarea {
                     margin: 5px 0;
                     padding: 1em;
+                    width: 34rem;
+                    height: 12rem;
                     .form-el(20px);
                 }
                 button {
