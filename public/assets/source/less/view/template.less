@@ -18,9 +18,11 @@ header {
                 align-items: center;
                 color: white;
                 padding: .4em 0;
+                margin-left: 45px;
                 user-select: none;
                 .name {
                     width: 100%;
+                    margin-left: 2em;
                     .first-line {
                         font-size: 3.5vh;
                     }
@@ -58,7 +60,7 @@ header {
                         .cta-size();
                         color: black;
                         &:hover {
-                            background-color: darken(@primary-color, 20%);
+                            background-color: darken(@primary-color, 5%);
                         }
                     }
                 }
@@ -286,7 +288,10 @@ main {
         flex-wrap: wrap;
         align-content: space-between;
         .location {
-            margin: 0;
+            iframe {
+                height: 420px;
+                width: 600px;
+            }
             .location-info {
                 h2 {
                     font-size: 4vh;
@@ -328,7 +333,7 @@ main {
                     50px);
                     padding-top: 6px;
                     margin-top: 5px;
-                    padding-bottom: 6px;
+                    padding: 10px 60px;
                     font-weight: 500;
                     color: @secondary-color;
                     &:hover {

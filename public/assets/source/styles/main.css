@@ -15,8 +15,13 @@ a {
   margin-right: auto;
 }
 .line {
-  width: 18rem;
+  width: 10vw;
   margin: 25px auto;
+}
+@media (max-width: 1000px) {
+  .line {
+    width: 30vw !important;
+  }
 }
 .wrapper {
   margin-left: auto;
@@ -60,6 +65,7 @@ header .navigation .bar .logo {
   align-items: center;
   color: white;
   padding: .4em 0;
+  margin-left: 45px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -67,6 +73,7 @@ header .navigation .bar .logo {
 }
 header .navigation .bar .logo .name {
   width: 100%;
+  margin-left: 2em;
 }
 header .navigation .bar .logo .name .first-line {
   font-size: 3.5vh;
@@ -117,7 +124,7 @@ header .navigation .bar .buttons .donate a {
   color: black;
 }
 header .navigation .bar .buttons .donate a:hover {
-  background-color: #978101;
+  background-color: #e4c201;
 }
 header .hero .goal {
   display: -webkit-box;
@@ -413,8 +420,9 @@ main section .about-us p {
   -ms-flex-line-pack: justify;
   align-content: space-between;
 }
-.contacts-us .find-us .location {
-  margin: 0;
+.contacts-us .find-us .location iframe {
+  height: 420px;
+  width: 600px;
 }
 .contacts-us .find-us .location .location-info h2 {
   font-size: 4vh;
@@ -456,7 +464,7 @@ main section .about-us p {
   border-radius: 50px;
   padding-top: 6px;
   margin-top: 5px;
-  padding-bottom: 6px;
+  padding: 10px 60px;
   font-weight: 500;
   color: #25458e;
 }
@@ -513,10 +521,15 @@ footer small a {
     font-size: 3vh !important;
   }
   .location {
+    margin-top: 2em;
     text-align: center;
   }
+  #map {
+    width: 100vw;
+    height: 33rem;
+  }
   .newsletter {
-    margin-left: 0 !important;
+    margin: 2em 0 !important;
   }
   .newsletter-info {
     text-align: center;
@@ -524,7 +537,13 @@ footer small a {
   form input,
   form textarea {
     width: 96vw !important;
+    height: 2.5em;
     font-size: 1.88vh;
+  }
+  #logo-img {
+    margin: .5em 0;
+    height: 150px !important;
+    width: 150px !important;
   }
 }
 
