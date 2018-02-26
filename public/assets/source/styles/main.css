@@ -333,7 +333,7 @@ main section .about-us p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 13.33rem;
+  height: 33.33%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -382,22 +382,34 @@ main section .about-us p {
   max-width: 33.33%;
 }
 .col-right .col-right-4 {
-  -webkit-box-flex: 66.66%;
-  -ms-flex: 66.66%;
-  flex: 66.66%;
-  max-width: 66.66%;
+  -webkit-box-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
 }
 .col-right .col-right-5 {
-  -webkit-box-flex: 33.33%;
-  -ms-flex: 33.33%;
-  flex: 33.33%;
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
 }
 .col-right .col-right-6,
 .col-right .col-right-7 {
-  -webkit-box-flex: 33.33%;
-  -ms-flex: 33.33%;
-  flex: 33.33%;
-  max-width: 33.33%;
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+}
+.img-bind-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.img-bind-container .img-bind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .contacts-us .contacts {
   text-align: center;
@@ -538,6 +550,7 @@ footer small a {
   }
   .newsletter {
     padding: 6em 0 0 0;
+    margin: 0 !important;
   }
   .newsletter-info {
     text-align: center;
