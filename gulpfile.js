@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
 const sourceMaps = require('gulp-sourcemaps');
-const ts = require('gulp-typescript');
+// const ts = require('gulp-typescript');
 const autoPrefixer = require('gulp-autoprefixer');
 ///////////////////////////////////////////////////
 var lessDir = 'public/assets/source/less/';

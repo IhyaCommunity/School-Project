@@ -457,6 +457,7 @@ main section .about-us p {
   padding-top: 6px;
   margin-top: 5px;
   padding-bottom: 6px;
+  font-weight: 500;
   color: #25458e;
 }
 .contacts-us .find-us .newsletter form button:hover {
@@ -465,7 +466,7 @@ main section .about-us p {
   -webkit-transition: .2s;
   transition: .2s;
 }
-.contacts-us footer {
+footer {
   background-color: #333333;
   height: 150px;
   display: -webkit-box;
@@ -478,11 +479,11 @@ main section .about-us p {
   -ms-flex-pack: center;
   justify-content: center;
 }
-.contacts-us footer small {
+footer small {
   color: white;
   font-size: 1.1em;
 }
-.contacts-us footer small a {
+footer small a {
   color: #559c58;
 }
 @media (max-width: 1000px) {
@@ -510,6 +511,20 @@ main section .about-us p {
   .case-container .case p {
     width: 100% !important;
     font-size: 3vh !important;
+  }
+  .location {
+    text-align: center;
+  }
+  .newsletter {
+    margin-left: 0 !important;
+  }
+  .newsletter-info {
+    text-align: center;
+  }
+  form input,
+  form textarea {
+    width: 96vw !important;
+    font-size: 1.88vh;
   }
 }
 
