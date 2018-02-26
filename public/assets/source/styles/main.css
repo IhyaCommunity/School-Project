@@ -1,6 +1,10 @@
 html,
 body {
   font-family: 'Raleway';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 h1,
 h2 {
@@ -70,6 +74,10 @@ header .navigation .bar .logo {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+header .navigation .bar .logo img {
+  height: 100px;
+  width: 100px;
 }
 header .navigation .bar .logo .name {
   width: 100%;
@@ -529,7 +537,7 @@ footer small a {
     height: 33rem;
   }
   .newsletter {
-    margin: 2em 0 !important;
+    padding: 6em 0 0 0;
   }
   .newsletter-info {
     text-align: center;
