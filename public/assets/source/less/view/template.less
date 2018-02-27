@@ -169,11 +169,11 @@ main {
         .qoute {
             p {
                 font-family: sans-serif;
-                font-size: 2em;
+                font-size: 2.3em;
             }
             span {
                 padding-top: 60px;
-                font-size: 2.1em;
+                font-size: 1.5em;
                 font-family: sans-serif;
             }
         }
@@ -182,6 +182,7 @@ main {
 
 ///////////////////////// PHOTOS //////////////////////////////////////////
 .gallery {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     img {
@@ -190,7 +191,7 @@ main {
         vertical-align: middle;
     }
     img:hover {
-        transform: scale3d(1.2, 1.2, 1);
+        transform: scale(1.2);
         transition: .3s;
         box-shadow: 1px 1px 41px 8px rgba(0, 0, 0, 1);
     }
@@ -218,7 +219,7 @@ main {
         align-items: center;
         background-color: @secondary-color;
         span {
-            font-size: 2.5vh;
+            font-size: 4vh;
             color: white;
         }
     }
@@ -267,8 +268,9 @@ main {
         flex-wrap: wrap;
         align-content: space-between;
         .location {
+            margin-top: 10px;
             iframe {
-                height: 420px;
+                height: 400px;
                 width: 600px;
             }
             .location-info {
@@ -282,7 +284,7 @@ main {
             }
         }
         .newsletter {
-            margin-left: 30px;
+            margin-left: 40px;
             .newsletter-info {
                 h1 {
                     font-size: 4vh;
