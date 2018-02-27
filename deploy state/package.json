@@ -2,6 +2,7 @@
   "name": "school-project",
   "description": "Our sample Node to Heroku app",
   "main": "server.js",
+  "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
   },
