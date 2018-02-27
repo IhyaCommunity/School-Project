@@ -9,14 +9,13 @@
   "author": "Sky{Impel}",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-webserver": "^0.9.1",
-    "less-plugin-autoprefix": "^1.5.1"
+    "gulp-uglify": "^3.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
     "gulp-less": "^3.4.0"
   }
 }

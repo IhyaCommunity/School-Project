@@ -1,18 +1,22 @@
+///////////////////////////////////////////////////
+
 const gulp = require('gulp');
 const less = require('gulp-less');
 const sourceMaps = require('gulp-sourcemaps');
-// const ts = require('gulp-typescript');
+const cleanCss = require('gulp-clean-css');
+const uglify = require('gulp-uglify');
 const autoPrefixer = require('gulp-autoprefixer');
-///////////////////////////////////////////////////
-var lessDir = 'public/assets/source/less/';
-var cssDir = 'public/assets/source/styles/';
-var tsOut = 'public/assets/source/scripts/';
-
 
 //////////////////////////////////////////////////
-var tsDir = 'public/assets/source/typescript/*.ts';
 
-/////////////////////////////////////////////////////////
+var lessDir = 'public/assets/source/less/';
+var cssDir = 'public/assets/dist/styles/';
+
+
+var jsOut = 'public/assets/dist/scripts/';
+var jsDir = 'public/assets/source/scripts/**/*.js';
+
+///////////////////////////////////////////////////
 
 gulp.task('less', () => {
     return gulp.src(`${lessDir}main.less`)
@@ -22,25 +26,24 @@ gulp.task('less', () => {
             browsers: ['last 2 versions'],
             cascade: false
         }))
+        .pipe(cleanCss())
         .pipe(sourceMaps.write('/'))
         .pipe(gulp.dest(cssDir));
 });
+///////////////////////////////////////////////////////
 
-// gulp.task('typescript', function () {
-//     return gulp.src(tsDir)
-//         .pipe(ts({
-//             noImplicitAny: true
-//         }))
-//         .pipe(sourceMaps.init())
-//         .pipe(sourceMaps.write('/'))
-//         .pipe(gulp.dest(tsOut));
-// });
-
-gulp.task('watch', () => {
-    gulp.watch([`${lessDir}**/*.less`, tsDir], ['less']);
+gulp.task('uglify', () => {
+    return gulp.src(jsDir)
+        .pipe(uglify())
+        .pipe(gulp.dest(jsOut))
 });
 
+//////////////////////////////////////////////////////////////
 
+gulp.task('watch', () => {
+    gulp.watch([`${lessDir}**/*.less`, jsDir], ['less','uglify']);
+});
 
+///////////////////////////////////////////////////////
 
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['less', 'uglify','watch']);
